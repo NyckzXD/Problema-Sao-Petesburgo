@@ -1,10 +1,10 @@
-# 🎲 Paradoxo de São Petersburgo — Caderno de Probabilidade
+#  Paradoxo de São Petersburgo
 
 > Um simulador interativo do famoso paradoxo da teoria da probabilidade, onde o **valor esperado matemático é infinito**, mas ninguém pagaria uma fortuna para jogar.
 > https://nyckzxd.github.io/Problema-Sao-Petesburgo/
 ---
 
-## 📖 O que é o Paradoxo de São Petersburgo?
+##  O que é o Paradoxo de São Petersburgo?
 
 O **Paradoxo de São Petersburgo** é um problema clássico da teoria da probabilidade e da economia comportamental, formulado originalmente por **Nicolaus Bernoulli** em 1713 e popularizado por seu primo **Daniel Bernoulli**.
 
@@ -28,16 +28,16 @@ Pela teoria clássica, valeria a pena pagar **qualquer preço** para jogar. Por�
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
-### 🎮 Modo Jogar (Interativo)
+###  Modo Jogar (Interativo)
 - Inicia com um saldo de **R$ 1.000,00**
 - Pague R$ 50,00 por rodada e gire a moeda com animação 3D flip
 - Acompanhe o **saldo**, **rodadas jogadas**, **total apostado** e **lucro/prejuízo** em tempo real
 - Histórico completo de todas as rodadas com resultado líquido
 - Botão de reiniciar para começar do zero
 
-### 📊 Modo Simular (Monte Carlo)
+###  Modo Simular (Monte Carlo)
 - Simule de **100 a 50 milhões** de rodadas instantaneamente
 - Atalhos rápidos: 100, 10 mil, 1 milhão e 10 milhões de jogadas
 - Resultados detalhados:
@@ -48,7 +48,7 @@ Pela teoria clássica, valeria a pena pagar **qualquer preço** para jogar. Por�
 
 ---
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 | Tecnologia | Uso |
 |---|---|
@@ -60,7 +60,7 @@ Projeto **100% front-end** — sem dependências externas, sem build step, sem f
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 MINIGAME/
@@ -74,7 +74,7 @@ MINIGAME/
 
 ---
 
-## ▶️ Como executar
+## ▶ Como executar
 
 Por ser um projeto puramente front-end, basta abrir o arquivo no navegador:
 
@@ -92,7 +92,7 @@ Nenhuma instalação de dependências necessária.
 
 ---
 
-## 🎨 Design System
+##  Design System
 
 O projeto utiliza uma paleta **dark mode** com tons de verde musgo e ciano inspirados em cadernos de probabilidade clássicos:
 
@@ -111,7 +111,7 @@ O projeto utiliza uma paleta **dark mode** com tons de verde musgo e ciano inspi
 
 ---
 
-## 🧮 Detalhes Matemáticos
+##  Detalhes Matemáticos
 
 | Situação | Valor |
 |---|---|
@@ -122,7 +122,7 @@ O projeto utiliza uma paleta **dark mode** com tons de verde musgo e ciano inspi
 
 ---
 
-## 📜 Referências
+##  Referências
 
 - Bernoulli, D. (1738). *Specimen Theoriae Novae de Mensura Sortis*. Commentarii Academiae Scientiarum Imperialis Petropolitanae.
 - [Wikipedia — St. Petersburg Paradox](https://en.wikipedia.org/wiki/St._Petersburg_paradox)
