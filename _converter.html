@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><title>Base64 Converter</title></head>
+<body>
+<p>Clique no botão para gerar os base64 das imagens da moeda:</p>
+<button onclick="convert()">Converter</button>
+<pre id="out" style="word-break:break-all;font-size:10px;max-height:400px;overflow:auto"></pre>
+<script>
+async function convert() {
+  const paths = [
+    'file:///C:/Users/conta/.gemini/antigravity/brain/02a6e1b8-734b-434e-8296-5ef438af7533/coin_cara_1783809999303.jpg',
+    'file:///C:/Users/conta/.gemini/antigravity/brain/02a6e1b8-734b-434e-8296-5ef438af7533/coin_coroa_1783810016016.jpg'
+  ];
+  const names = ['coin_cara', 'coin_coroa'];
+  let out = '';
+  for (let i = 0; i < paths.length; i++) {
+    const resp = await fetch(paths[i]);
+    const blob = await resp.blob();
+    const reader = new FileReader();
+    const b64 = await new Promise(res => { reader.onload = e => res(e.target.result); reader.readAsDataURL(blob); });
+    out += names[i] + ':\n' + b64 + '\n\n';
+    // Also try to download
+    const a = document.createElement('a');
+    a.href = b64;
+    a.download = names[i] + '.jpg';
+    a.click();
+  }
+  document.getElementById('out').textContent = out;
+}
+</script>
+</body>
+</html>

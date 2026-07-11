@@ -90,13 +90,25 @@ header p b { color: var(--celadon); font-weight: 600; }
 }
 .coin-face {
   position: absolute; inset: 0; border-radius: 50%; display: flex; flex-direction: column;
-  align-items: center; justify-content: center; backface-visibility: hidden;
-  box-shadow: inset 0 0 0 2px var(--ink), inset 0 0 0 4px currentColor;
+  align-items: center; justify-content: flex-end; backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 3px var(--ink), inset 0 0 0 5px rgba(179,239,178,.4);
 }
-.coin-face .emoji { font-size: 2rem; line-height: 1; }
-.coin-face .txt { font-family: 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .14em; margin-top: 6px; }
+.coin-img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+  pointer-events: none;
+}
+.coin-face .txt {
+  position: relative; z-index: 2;
+  font-family: 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .14em;
+  margin-bottom: 10px;
+  background: rgba(0,26,35,.65); backdrop-filter: blur(2px);
+  padding: 2px 8px; border-radius: 4px;
+}
 .face-cara { background: var(--celadon); color: var(--ink-soft); }
+.face-cara .txt { color: var(--ink-soft); }
 .face-coroa { background: var(--pine); color: var(--alice); transform: rotateY(180deg); }
+.face-coroa .txt { color: var(--celadon); }
 
 .banca-display { margin: 18px 0 8px; }
 .banca-display .b-label { color: var(--muted); font-family: 'IBM Plex Mono', monospace; font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; }
